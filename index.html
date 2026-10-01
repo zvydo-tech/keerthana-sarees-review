@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keerthana Sarees | Sarees for Women in Vijayawada</title>
+    <meta
+      name="description"
+      content="Keerthana Sarees is a saree shop in Vijayawada for sarees for women. Wholesale sarees, pattu sarees, and cotton sarees. Write a Google review after your visit."
+    />
+    <meta property="og:title" content="Keerthana Sarees | Sarees for Women in Vijayawada" />
+    <meta
+      property="og:description"
+      content="Saree shop in Vijayawada for wholesale and retail sarees for women, including pattu and cotton sarees."
+    />
+    <meta name="theme-color" content="#000000" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="review-public-body">
+    <main class="review-shell">
+      <section class="review-card">
+        <div class="brand-row">
+          <div class="brand-mark">
+            <img class="brand-map-logo" src="./logo.png" alt="Keerthana Sarees" />
+          </div>
+          <p class="review-business-name" id="businessName">
+            Keerthana Sarees | Wholesale &amp; Retail Ladies Wear | Vijayawada
+          </p>
+        </div>
+
+        <div id="askStep">
+          <h1 id="askHeading">What did you like?</h1>
+          <p class="section-copy">
+            Pick what was true. We turn that into a review you can copy to Google.
+          </p>
+
+          <form id="reviewForm">
+            <div class="like-grid" id="likes" role="group" aria-labelledby="askHeading"></div>
+
+            <label class="field" for="detail">
+              <span class="field-label">Add a detail, if you want</span>
+              <textarea
+                id="detail"
+                rows="3"
+                placeholder="Example: I bought a pattu saree for a wedding. Telugu, Hindi, or English is fine."
+              ></textarea>
+            </label>
+
+            <button class="primary-button write-button" id="writeReview" type="submit">
+              Write my review
+            </button>
+            <p class="inline-status" id="formStatus" role="status"></p>
+          </form>
+        </div>
+
+        <div id="draftStep" hidden>
+          <div>
+            <h1>Leave us a review</h1>
+            <p class="section-copy">
+              Copy the draft, open our Business Profile, paste it, choose your rating, and post.
+            </p>
+          </div>
+
+          <div>
+            <div class="draft-head">
+              <p class="field-label">Review draft</p>
+              <p class="draft-status-pill" id="draftStatusPill">
+                <span class="draft-dot is-blue"></span>
+                <span class="draft-dot is-red"></span>
+                <span class="draft-dot is-yellow"></span>
+                <span class="draft-dot is-green"></span>
+                <span class="draft-status-text" id="draftStatusText">Writing your review</span>
+              </p>
+            </div>
+            <div class="review-text-box" id="reviewText" aria-live="polite"></div>
+            <div class="review-actions">
+              <button class="secondary-button" id="copyReview" type="button">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                  <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                </svg>
+                <span id="copyLabel">Copy review draft</span>
+              </button>
+              <button class="primary-button" id="openGoogle" type="button">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M15 3h6v6"></path>
+                  <path d="M10 14 21 3"></path>
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                </svg>
+                <span>Open Business Profile</span>
+              </button>
+            </div>
+            <p class="inline-status" id="reviewStatus" role="status"></p>
+            <div class="quiet-row">
+              <button class="text-button" id="reword" type="button">Write it differently</button>
+              <button class="text-button" id="back" type="button">Change what I liked</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <p class="shop-line">
+        Wholesale and retail sarees for women in Vijayawada. Pattu, cotton, and wedding sarees.
+      </p>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
